@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<title>Welkom bij Stichting Homsk</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">-->
+<link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Baloo+Da' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="stylesheets/style.css">
+<body>
+
+
+  <!-- Content Section -->
+  <div class="w3-container w3-content w3-center w3-padding-32" style="max-width:960px">
+    <figure class="logo_content w3-card-4">
+      <img src="images/HOMSK_small.png" alt="logo Stichting HOMSK" class="logo" />
+    </figure>
+    <div class="w3-row home_content_about w3-card-4 w3-sand">
+      <div class="w3-col s12 m4">
+        <blockquote>HOMSK = toneel + meer...</blockquote>
+      </div>
+      <div class="w3-col s12 m8">
+        <a href="homsk/index.html" class="w3-btn home_button_about">
+          <span class="text_about">Over</span>
+        </a>
+      </div>
+    </div>
+    <br />
+    <div class="w3-row home_content_performances w3-card-8 w3-sand">
+      <div class="w3-col s12 m4">
+        <blockquote>Voorstellingen...</blockquote>
+      </div>
+      <div class="w3-col s12 m8">
+        <a href="voorstellingen/index.html" class="w3-btn w3-centered home_button_performances">
+          <span class="text_performances">Toneel</span>
+        </a>
+      </div>
+    </div>
+          <li>
+            <figure>
+
+            </figure>
+          </li>
+      <div class="w3-col s12 m6">
+        <figure>
+          <a href="workshops/index.html" class="w3-btn home_button_workshops">
+            <span class="text_workshops">Workshops</span>
+          </a>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a href="#" class="w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" class="w3-hover-text-red w3-show-inline-block"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#" class="w3-hover-text-light-blue w3-show-inline-block"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="w3-hover-text-grey w3-show-inline-block"><i class="fa fa-flickr"></i></a>
+  <a href="#" class="w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 4000);
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
