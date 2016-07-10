@@ -1,0 +1,186 @@
+html.home_opacity {
+  opacity: 0.95;
+}
+body.home_background {
+  font-family: "Lato", sans-serif;
+  background: #f9f9f9;
+  background-image: url(background_wall.jpg);
+  background-size: contain;
+  opacity: 0.9;
+}
+.home_content_about,
+.home_content_performances,
+.home_content_workshops {
+  font-size: 1.75em;
+  padding: 1.25em;
+  width: 80%;
+  p.subscript,
+  p.subscript_float_left,
+  p.subscript_float_right {
+    font-family: "WilliamLucasStd";
+    font-size: 1.125em;
+    padding: 4px;
+    color: white;
+    background: #567782;
+    transform: rotate(-10deg);
+    float: right;
+    width: 80%;
+    box-shadow: 1px 1px 1px #777;
+  }
+  p.subscript_float_left {
+    background-color: #923b3b;
+    float: left;
+    transform: rotate(5deg);
+    width: 85%;
+    }
+  p.subscript_float_right {
+    background-color: #a7739e;
+    width: 75%;
+    transform: rotate(-15deg);
+  }
+}
+section.home_content_about,
+section.home_content_performances,
+section.home_content_workshops {
+  margin: 0 auto;
+  border: 1px solid #8aafbb;
+  background-color: ivory;
+  @include border-radius(1%);
+}
+section.home_content_about {
+  transform: rotate(4deg);
+  z-index: -1;
+}
+section.home_content_performances {
+  transform: rotate(-2deg);
+  z-index: 0;
+}
+.home_button_about,
+.home_button_performances,
+.home_button_workshops {
+  width: 50vw;
+  height: 50vw;
+  @include border-radius(50%);
+  border: 3px solid white;
+  margin: 0 auto 1em;
+  background-image: url(omsk.jpg);
+  background-size: cover;
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(center);
+}
+.home_button_performances {
+  background-image: url(button_home_performances.jpg);
+}
+.home_button_workshops {
+  background-image: url(button_home_workshops.jpg);
+}
+.text_performances,
+.text_about,
+.text_workshops {
+  font-size: 2.25em;
+  font-family: 'Baloo Da', cursive;
+  line-height: 1em;
+  color: white;
+  letter-spacing: 2px;
+  text-shadow: 4px 4px 1px orange;
+}
+.text_about {
+  text-shadow: 4px 4px 1px #607d8b;
+}
+.text_workshops {
+  text-shadow: 4px 4px 1px #ff3400;
+}
+.home_contact_link {
+  font-family: 'SchmutzPro-Clogged';
+  width: 30%;
+  font-size: 5em;
+  a {
+    text-decoration: none;
+    opacity: 0.8;
+    color: darkred;
+  }
+}
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 375px) {
+  .home_button_about,
+  .home_button_performances,
+  .home_button_workshops {
+    width: 50vw;
+    height: 50vw;
+  }
+  h2.home_subtitle {
+    font-size: 4em;
+  }
+  .text_performances,
+  .text_about,
+  .text_workshops {
+    font-size: 1.75em;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .header_home {
+    transform: rotate(0deg);
+    margin: 0 auto 1em;
+  }
+  .logo {
+    margin: 1em 0;
+  }
+  h2.home_subtitle {
+    font-size: 5em;
+    width: 70%;
+    padding-top: 0.75em;
+    line-height: 1.5em;
+    letter-spacing: 3px;
+  }
+  .home_button_about,
+  .home_button_performances,
+  .home_button_workshops {
+    width: 25vw;
+    height: 25vw;
+  }
+  section.logo_content {
+  width: 30%;
+  float: left;
+  }
+  section.home_content_about,
+  section.home_content_performances,
+  section.home_content_workshops {
+    clear: left;
+    width: 40%;
+  }
+  section.home_content_performances {
+    float: left;
+    margin-left: 7em;
+  }
+  .home_contact_link {
+    float: right;
+    font-size: 5em;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  section.home_content_performances {
+    margin-left: 6em;
+  }
+  .home_contact_link {
+    float: right;
+    font-size: 4em;
+  }
+}
+
+@media screen and (min-width: 960px) {
+
+  .home_button_about,
+  .home_button_performances,
+  .home_button_workshops {
+    width: 220px;
+    height: 220px;
+  }
+  .header_home {
+    padding-left: 2em;
+  }
+}
