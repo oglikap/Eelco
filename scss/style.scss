@@ -20,21 +20,8 @@
   -ms-border-radius: $radius;
   border-radius: $radius;
 }
-<<<<<<< HEAD
-=======
 
-.mySlides {display: none}
-img {max-width: 100%;}
 
-// NOTE: HOME-page
-
->>>>>>> dab52ab285361a6435a812cdb83136ff27aa9bfb
-h2,
-h4,
-h5 {
-  font-family: 'Baloo Da', cursive;
-}
-<<<<<<< HEAD
 .mySlides {display: none}
 img {max-width: 100%;}
 
@@ -56,14 +43,17 @@ img {max-width: 100%;}
   margin: 0 auto;
 }
 h2.subtitle {
-=======
-h2.home_subtitle {
->>>>>>> dab52ab285361a6435a812cdb83136ff27aa9bfb
   color: white;
   font-size: 5em;
   margin: 0 auto;
   font-family: "WilliamLucasStd";
   font-weight: bold;
+}
+
+h2,
+h4,
+h5 {
+  font-family: 'Baloo Da', cursive;
 }
 
 // NOTE: h2 with lines
@@ -99,7 +89,6 @@ h2 span:after {
 
 // NOTE: Start content
 
-<<<<<<< HEAD
 .home_content_about,
 .home_content_performances,
 .home_content_workshops {
@@ -219,8 +208,6 @@ section.home_content_performances {
 }
 
 
-=======
->>>>>>> dab52ab285361a6435a812cdb83136ff27aa9bfb
 footer {
   margin-top: 6em;
   p {
@@ -316,7 +303,6 @@ article.parallel {
 // MEDIA QUERIES
 
 @media screen and (max-width: 375px) {
-<<<<<<< HEAD
   .home_button_about,
   .home_button_performances,
   .home_button_workshops {
@@ -365,18 +351,10 @@ article.parallel {
     float: right;
     font-size: 5em;
   }
-=======
-
-}
-
-@media screen and (min-width: 601px) {
-
->>>>>>> dab52ab285361a6435a812cdb83136ff27aa9bfb
 }
 
 @media screen and (min-width: 960px) {
 
-<<<<<<< HEAD
   .home_button_about,
   .home_button_performances,
   .home_button_workshops {
@@ -384,8 +362,6 @@ article.parallel {
     height: 220px;
   }
 
-=======
->>>>>>> dab52ab285361a6435a812cdb83136ff27aa9bfb
 }
 
 @import "home";
