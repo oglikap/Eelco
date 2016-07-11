@@ -1583,17 +1583,21 @@ input[type=checkbox].w3-check:disabled + .w3-validate, input[type=radio].w3-radi
 @font-face {
   font-family: 'SchmutzPro-Clogged';
   src: url("../Fonts/2FDF27_3C_0") format("woff2"), url("../Fonts/2FDF27_3C_0.woff") format("woff"), url("../Fonts/2FDF27_3C_0.ttf") format("truetype"), url("../Fonts/2FDF27_3C_0.eot") format("eot"); }
+<<<<<<< HEAD
 h2,
 h4,
 h5 {
   font-family: 'Baloo Da', cursive; }
 
+=======
+>>>>>>> dab52ab285361a6435a812cdb83136ff27aa9bfb
 .mySlides {
   display: none; }
 
 img {
   max-width: 100%; }
 
+<<<<<<< HEAD
 .header {
   background-color: #1a194e;
   opacity: 0.9;
@@ -1614,6 +1618,14 @@ img {
   margin: 0 auto; }
 
 h2.subtitle {
+=======
+h2,
+h4,
+h5 {
+  font-family: 'Baloo Da', cursive; }
+
+h2.home_subtitle {
+>>>>>>> dab52ab285361a6435a812cdb83136ff27aa9bfb
   color: white;
   font-size: 5em;
   margin: 0 auto;
@@ -1648,6 +1660,96 @@ h2 span:before {
 h2 span:after {
   left: 100%; }
 
+<<<<<<< HEAD
+=======
+footer {
+  margin-top: 6em; }
+  footer p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.25em;
+    line-height: 1.6em;
+    width: 95%;
+    margin: 0 auto;
+    text-shadow: 0 0 0.1px;
+    letter-spacing: 0.5px; }
+
+.small_nav_btn {
+  border: 1px solid #e8e8e8;
+  margin: 1em 1em 0 0;
+  font-family: 'Baloo Da', cursive;
+  font-weight: bold;
+  background: #f9f9f9;
+  color: orange;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  border-radius: 10%; }
+
+.menu_small_panel {
+  border-bottom: 1px solid #e8e8e8; }
+
+.menu_small {
+  border-top: 1px solid #e8e8e8;
+  font-family: 'Baloo Da', cursive;
+  font-weight: bold;
+  color: orange; }
+
+.active {
+  color: #f55454; }
+
+.w3-navbar li a:hover {
+  background: orange;
+  color: white; }
+
+h4.header_about,
+h4.header_explain,
+h4.header_thematiek,
+h4.header_parallel {
+  color: white;
+  margin: 1em auto;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px; }
+
+h4.header_about {
+  background: #c86091;
+  margin: 1em auto;
+  padding: 0.25em 0;
+  font-size: 1.25em; }
+
+h4.header_explain {
+  background: #7e7ff3;
+  width: 80%; }
+
+h4.header_thematiek {
+  background: #a25f85;
+  width: 70%; }
+
+h4.header_parallel {
+  background: #627962;
+  width: 80%; }
+
+article.parallel a {
+  color: #627962;
+  text-decoration: none; }
+article.parallel a:hover {
+  color: #7e7ff3; }
+
+.portrait {
+  width: 65%;
+  padding: 0.5em;
+  border: 1px solid lightgrey; }
+
+html.home_opacity {
+  opacity: 0.95; }
+
+body.home_background {
+  font-family: "Lato", sans-serif;
+  background: #f9f9f9;
+  background-image: url(background_wall.jpg);
+  background-size: contain;
+  opacity: 0.9; }
+
+>>>>>>> dab52ab285361a6435a812cdb83136ff27aa9bfb
 .home_content_about,
 .home_content_performances,
 .home_content_workshops {
@@ -1743,7 +1845,11 @@ section.home_content_performances {
 .text_performances,
 .text_about,
 .text_workshops {
+<<<<<<< HEAD
   font-size: 2.5em;
+=======
+  font-size: 2.25em;
+>>>>>>> dab52ab285361a6435a812cdb83136ff27aa9bfb
   font-family: 'Baloo Da', cursive;
   line-height: 1em;
   color: white;
@@ -1762,6 +1868,7 @@ section.home_content_performances {
   font-size: 5em; }
   .home_contact_link a {
     text-decoration: none;
+<<<<<<< HEAD
     opacity: 1;
     color: #616161;
     letter-spacing: 4px;
@@ -1845,6 +1952,10 @@ article.parallel a:hover {
   width: 65%;
   padding: 0.5em;
   border: 1px solid lightgrey; }
+=======
+    opacity: 0.8;
+    color: darkred; }
+>>>>>>> dab52ab285361a6435a812cdb83136ff27aa9bfb
 
 @media screen and (max-width: 375px) {
   .home_button_about,
@@ -1854,6 +1965,7 @@ article.parallel a:hover {
     height: 50vw; }
 
   h2.home_subtitle {
+<<<<<<< HEAD
     font-size: 4em; } }
 @media screen and (min-width: 601px) {
   .header {
@@ -1861,6 +1973,23 @@ article.parallel a:hover {
     margin: 2em auto 1em; }
 
   h2.subtitle {
+=======
+    font-size: 4em; }
+
+  .text_performances,
+  .text_about,
+  .text_workshops {
+    font-size: 1.75em; } }
+@media screen and (min-width: 601px) {
+  .header_home {
+    transform: rotate(0deg);
+    margin: 0 auto 1em; }
+
+  .logo {
+    margin: 1em 0; }
+
+  h2.home_subtitle {
+>>>>>>> dab52ab285361a6435a812cdb83136ff27aa9bfb
     font-size: 5em;
     width: 70%;
     padding-top: 0.75em;
@@ -1885,16 +2014,31 @@ article.parallel a:hover {
 
   section.home_content_performances {
     float: left;
+<<<<<<< HEAD
     margin-left: 8em; }
+=======
+    margin-left: 7em; }
+>>>>>>> dab52ab285361a6435a812cdb83136ff27aa9bfb
 
   .home_contact_link {
     float: right;
     font-size: 5em; } }
+<<<<<<< HEAD
+=======
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  section.home_content_performances {
+    margin-left: 6em; }
+
+  .home_contact_link {
+    float: right;
+    font-size: 4em; } }
+>>>>>>> dab52ab285361a6435a812cdb83136ff27aa9bfb
 @media screen and (min-width: 960px) {
   .home_button_about,
   .home_button_performances,
   .home_button_workshops {
     width: 220px;
+<<<<<<< HEAD
     height: 220px; } }
 html.home_opacity {
   opacity: 0.95; }
@@ -1905,5 +2049,11 @@ body.body_home {
   background-image: url(background_wall.jpg);
   background-size: contain;
   opacity: 0.9; }
+=======
+    height: 220px; }
+
+  .header_home {
+    padding-left: 2em; } }
+>>>>>>> dab52ab285361a6435a812cdb83136ff27aa9bfb
 
 /*# sourceMappingURL=style.css.map */
