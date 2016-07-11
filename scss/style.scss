@@ -2,10 +2,6 @@
 @import "w3";
 @import "flex";
 @font-face {
-  font-family: 'Scooter';
-  src: url('../Fonts/2FDF27_3D_0.woff2') format('woff2'), url('../Fonts/2FDF27_3D_0.woff') format('woff'), url('../Fonts/2FDF27_3D_0.ttf') format('truetype'), url('../Fonts/2FDF27_3D_0.eot') format('eot');
-}
-@font-face {
   font-family: "WilliamLucasStd";
   src: url('../Fonts/2FDF27_4A_0.woff2') format('woff2'), url('../Fonts/2FDF27_4A_0.woff') format('woff'), url('../Fonts/2FDF27_4A_0.ttf') format('truetype'), url('../Fonts/2FDF27_4A_0.eot') format('eot');
 }
@@ -20,12 +16,11 @@
   -ms-border-radius: $radius;
   border-radius: $radius;
 }
-
-
 .mySlides {display: none}
 img {max-width: 100%;}
 
 // HEADER
+
 .header {
   background-color: #1a194e;
   opacity: 0.9;
@@ -49,14 +44,13 @@ h2.subtitle {
   font-family: "WilliamLucasStd";
   font-weight: bold;
 }
-
 h2,
 h4,
 h5 {
   font-family: 'Baloo Da', cursive;
 }
 
-// NOTE: h2 with lines
+// H2 WITH LINES
 
 h2 {
   position: relative;
@@ -88,125 +82,6 @@ h2 span:after {
 }
 
 // NOTE: Start content
-
-.home_content_about,
-.home_content_performances,
-.home_content_workshops {
-//  border-top: 1px solid lightgrey;
-  font-size: 1.75em;
-  padding: 1.25em;
-//  color: #797c9c;
-//  font-family: 'Baloo Da', cursive;
-  width: 80%;
-//  blockquote {
-//  background: #607d8b;
-//  color: white;
-//  margin-top: 1em;
-//  padding: 1em 0;
-//  line-height: 1em;
-//}
-
-  p.subscript,
-  p.subscript_float_left,
-  p.subscript_float_right {
-    font-family: "WilliamLucasStd";
-    font-size: 1.125em;
-    padding: 4px;
-    color: white;
-  //  color: #886538;
-    background: #567782;
-    transform: rotate(-10deg);
-    float: right;
-    width: 80%;
-    box-shadow: 1px 1px 1px #777;
-  }
-  p.subscript_float_left {
-    background-color: #923b3b;
-    float: left;
-    transform: rotate(5deg);
-    width: 85%;
-    }
-  p.subscript_float_right {
-    background-color: #a7739e;
-    width: 75%;
-    transform: rotate(-15deg);
-  }
-}
-
-section.home_content_about,
-section.home_content_performances,
-section.home_content_workshops {
-  margin: 0 auto;
-//  box-shadow: 1px 1px 2px lightgrey;
-  border: 1px solid #8aafbb;
-  background-color: ivory;
-  @include border-radius(1%);
-  }
-section.home_content_about {
-  transform: rotate(4deg);
-  z-index: -1;
-}
-section.home_content_performances {
-  transform: rotate(-2deg);
-  z-index: 0;
-}
-
-.home_button_about,
-.home_button_performances,
-.home_button_workshops {
-  width: 50vw;
-  height: 50vw;
-  @include border-radius(50%);
-  border: 3px solid white;
-  margin: 0 auto 1em;
-  background-image: url(omsk.jpg);
-//  background-image: url(220px-Gerard_philips.jpg);
-  background-size: cover;
-  @include flexbox;
-  @include align-items(center);
-  @include justify-content(center);
-}
-.home_button_performances {
-  background-image: url(button_home_performances.jpg);
-}
-.home_button_workshops {
-  background-image: url(button_home_workshops.jpg);
-}
-
-.text_performances,
-.text_about,
-.text_workshops {
-//  font-family: "Scooter", "Comic Sans MS", cursive, sans-serif;
-  font-size: 2.5em;
-  font-family: 'Baloo Da', cursive;
-  line-height: 1em;
-//  color: #ffc107;
-  color: white;
-  letter-spacing: 2px;
-  text-shadow: 4px 4px 1px orange;
-}
-.text_about {
-  text-shadow: 4px 4px 1px #607d8b;
-}
-.text_workshops {
-  text-shadow: 4px 4px 1px #ff3400;
-}
-.home_contact_link {
-  font-family: 'SchmutzPro-Clogged';
-  width: 30%;
-  font-size: 5em;
-  a {
-    text-decoration: none;
-    opacity: 1;
-    color: #616161;
-    letter-spacing: 4px;
-    text-shadow: 1px 1px 4px white;
-  }
-  a:hover {
-    color: #b184a8;
-  }
-}
-
 
 footer {
   margin-top: 6em;
@@ -303,13 +178,7 @@ article.parallel {
 // MEDIA QUERIES
 
 @media screen and (max-width: 375px) {
-  .home_button_about,
-  .home_button_performances,
-  .home_button_workshops {
-    width: 50vw;
-    height: 50vw;
-  }
-  h2.home_subtitle {
+  h2.subtitle {
     font-size: 4em;
   }
 }
@@ -326,39 +195,9 @@ article.parallel {
     line-height: 1.5em;
     letter-spacing: 3px;
   }
-  .home_button_about,
-  .home_button_performances,
-  .home_button_workshops {
-    width: 25vw;
-    height: 25vw;
-  }
   section.logo_content {
   width: 30%;
   float: left;
-  }
-  section.home_content_about,
-  section.home_content_performances,
-  section.home_content_workshops {
-    clear: left;
-    width: 40%;
-  }
-  section.home_content_performances {
-    float: left;
-    margin-left: 8em;
-  }
-  .home_contact_link {
-    float: right;
-    font-size: 5em;
-  }
-}
-
-@media screen and (min-width: 960px) {
-
-  .home_button_about,
-  .home_button_performances,
-  .home_button_workshops {
-    width: 220px;
-    height: 220px;
   }
 
 }

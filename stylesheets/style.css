@@ -1575,9 +1575,6 @@ input[type=checkbox].w3-check:disabled + .w3-validate, input[type=radio].w3-radi
   text-shadow: 1px 1px 0 #ddd; }
 
 @font-face {
-  font-family: 'Scooter';
-  src: url("../Fonts/2FDF27_3D_0.woff2") format("woff2"), url("../Fonts/2FDF27_3D_0.woff") format("woff"), url("../Fonts/2FDF27_3D_0.ttf") format("truetype"), url("../Fonts/2FDF27_3D_0.eot") format("eot"); }
-@font-face {
   font-family: "WilliamLucasStd";
   src: url("../Fonts/2FDF27_4A_0.woff2") format("woff2"), url("../Fonts/2FDF27_4A_0.woff") format("woff"), url("../Fonts/2FDF27_4A_0.ttf") format("truetype"), url("../Fonts/2FDF27_4A_0.eot") format("eot"); }
 @font-face {
@@ -1647,6 +1644,111 @@ h2 span:before {
 
 h2 span:after {
   left: 100%; }
+
+footer {
+  margin-top: 6em; }
+  footer p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.25em;
+    line-height: 1.6em;
+    width: 95%;
+    margin: 0 auto;
+    text-shadow: 0 0 0.1px;
+    letter-spacing: 0.5px; }
+
+.small_nav_btn {
+  border: 1px solid #e8e8e8;
+  margin: 1em 1em 0 0;
+  font-family: 'Baloo Da', cursive;
+  font-weight: bold;
+  background: #f9f9f9;
+  color: orange;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  border-radius: 10%; }
+
+.menu_small_panel {
+  border-bottom: 1px solid #e8e8e8; }
+
+.menu_small {
+  border-top: 1px solid #e8e8e8;
+  font-family: 'Baloo Da', cursive;
+  font-weight: bold;
+  color: orange; }
+
+.active {
+  color: #f55454; }
+
+.w3-navbar li a:hover {
+  background: orange;
+  color: white; }
+
+h4.header_about,
+h4.header_explain,
+h4.header_thematiek,
+h4.header_parallel {
+  color: white;
+  margin: 1em auto;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px; }
+
+h4.header_about {
+  background: #c86091;
+  margin: 1em auto;
+  padding: 0.25em 0;
+  font-size: 1.25em; }
+
+h4.header_explain {
+  background: #7e7ff3;
+  width: 80%; }
+
+h4.header_thematiek {
+  background: #a25f85;
+  width: 70%; }
+
+h4.header_parallel {
+  background: #627962;
+  width: 80%; }
+
+article.parallel a {
+  color: #627962;
+  text-decoration: none; }
+article.parallel a:hover {
+  color: #7e7ff3; }
+
+.portrait {
+  width: 65%;
+  padding: 0.5em;
+  border: 1px solid lightgrey; }
+
+@media screen and (max-width: 375px) {
+  h2.subtitle {
+    font-size: 4em; } }
+@media screen and (min-width: 601px) {
+  .header {
+    transform: rotate(-2deg);
+    margin: 2em auto 1em; }
+
+  h2.subtitle {
+    font-size: 5em;
+    width: 70%;
+    padding-top: 0.75em;
+    line-height: 1.5em;
+    letter-spacing: 3px; }
+
+  section.logo_content {
+    width: 30%;
+    float: left; } }
+html.home_opacity {
+  opacity: 0.95; }
+
+body.body_home {
+  font-family: "Lato", sans-serif;
+  background: #f9f9f9;
+  background-image: url(background_wall.jpg);
+  background-size: contain;
+  opacity: 0.9; }
 
 .home_content_about,
 .home_content_performances,
@@ -1756,131 +1858,27 @@ section.home_content_performances {
 .text_workshops {
   text-shadow: 4px 4px 1px #ff3400; }
 
-.home_contact_link {
-  font-family: 'SchmutzPro-Clogged';
-  width: 30%;
-  font-size: 5em; }
-  .home_contact_link a {
-    text-decoration: none;
-    opacity: 1;
-    color: #616161;
-    letter-spacing: 4px;
-    text-shadow: 1px 1px 4px white; }
-  .home_contact_link a:hover {
-    color: #b184a8; }
-
-footer {
-  margin-top: 6em; }
-  footer p {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.25em;
-    line-height: 1.6em;
-    width: 95%;
-    margin: 0 auto;
-    text-shadow: 0 0 0.1px;
-    letter-spacing: 0.5px; }
-
-.small_nav_btn {
-  border: 1px solid #e8e8e8;
-  margin: 1em 1em 0 0;
-  font-family: 'Baloo Da', cursive;
-  font-weight: bold;
-  background: #f9f9f9;
-  color: orange;
-  -webkit-border-radius: 10%;
-  -moz-border-radius: 10%;
-  -ms-border-radius: 10%;
-  border-radius: 10%; }
-
-.menu_small_panel {
-  border-bottom: 1px solid #e8e8e8; }
-
-.menu_small {
-  border-top: 1px solid #e8e8e8;
-  font-family: 'Baloo Da', cursive;
-  font-weight: bold;
-  color: orange; }
-
-.active {
-  color: #f55454; }
-
-.w3-navbar li a:hover {
-  background: orange;
-  color: white; }
-
-h4.header_about,
-h4.header_explain,
-h4.header_thematiek,
-h4.header_parallel {
-  color: white;
-  margin: 1em auto;
-  letter-spacing: 1px;
-  text-shadow: 0 0 1px; }
-
-h4.header_about {
-  background: #c86091;
-  margin: 1em auto;
-  padding: 0.25em 0;
-  font-size: 1.25em; }
-
-h4.header_explain {
-  background: #7e7ff3;
-  width: 80%; }
-
-h4.header_thematiek {
-  background: #a25f85;
-  width: 70%; }
-
-h4.header_parallel {
-  background: #627962;
-  width: 80%; }
-
-article.parallel a {
-  color: #627962;
-  text-decoration: none; }
-article.parallel a:hover {
-  color: #7e7ff3; }
-
-.portrait {
-  width: 65%;
-  padding: 0.5em;
-  border: 1px solid lightgrey; }
-
 @media screen and (max-width: 375px) {
   .home_button_about,
   .home_button_performances,
   .home_button_workshops {
     width: 50vw;
-    height: 50vw; }
-
-  h2.home_subtitle {
-    font-size: 4em; } }
+    height: 50vw; } }
 @media screen and (min-width: 601px) {
-  .header {
-    transform: rotate(-2deg);
-    margin: 2em auto 1em; }
-
-  h2.subtitle {
-    font-size: 5em;
-    width: 70%;
-    padding-top: 0.75em;
-    line-height: 1.5em;
-    letter-spacing: 3px; }
-
   .home_button_about,
   .home_button_performances,
   .home_button_workshops {
     width: 25vw;
     height: 25vw; }
 
-  section.logo_content {
-    width: 30%;
-    float: left; }
-
-  section.home_content_about,
   section.home_content_performances,
   section.home_content_workshops {
     clear: left;
+    width: 40%; }
+
+  section.home_content_about {
+    float: right;
+    margin-right: 5em;
     width: 40%; }
 
   section.home_content_performances {
@@ -1889,21 +1887,40 @@ article.parallel a:hover {
 
   .home_contact_link {
     float: right;
-    font-size: 5em; } }
+    font-size: 5em; }
+
+  .home_personal {
+    font-family: "WilliamLucasStd";
+    font-weight: bold;
+    font-size: 5em;
+    color: #9e5454;
+    text-shadow: 3px 3px 6px white;
+    opacity: 0.8;
+    float: left;
+    width: 33%;
+    margin-top: 2em; }
+    .home_personal a {
+      text-decoration: none; }
+    .home_personal a:hover {
+      color: #3e3e66; }
+
+  .home_contact_link {
+    font-family: 'SchmutzPro-Clogged';
+    width: 30%;
+    font-size: 5em; }
+    .home_contact_link a {
+      text-decoration: none;
+      opacity: 1;
+      color: #616161;
+      letter-spacing: 4px;
+      text-shadow: 1px 1px 4px white; }
+    .home_contact_link a:hover {
+      color: #b184a8; } }
 @media screen and (min-width: 960px) {
   .home_button_about,
   .home_button_performances,
   .home_button_workshops {
     width: 220px;
     height: 220px; } }
-html.home_opacity {
-  opacity: 0.95; }
-
-body.body_home {
-  font-family: "Lato", sans-serif;
-  background: #f9f9f9;
-  background-image: url(background_wall.jpg);
-  background-size: contain;
-  opacity: 0.9; }
 
 /*# sourceMappingURL=style.css.map */
