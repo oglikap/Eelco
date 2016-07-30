@@ -20,7 +20,15 @@
 img {max-width: 100%;}
 
 // HEADER
-
+.navbar {
+  font-family: "WilliamLucasStd";
+  font-size: 2em;
+  color: #021e33;
+  background-color: aliceblue;
+  max-width: 75%;
+  margin: 0 auto;
+  transform: rotate(-2deg);
+}
 .header {
   background-color: #1a194e;
   opacity: 0.9;
@@ -31,11 +39,13 @@ img {max-width: 100%;}
   @include border-radius(2%);
   margin: 2em auto 1em;
   border: 1px solid #8aafbb;
-  background-color: ivory;
+  background-color: aliceblue;
   transform: rotate(-5deg);
-}
-.logo {
-  margin: 0 auto;
+  width: 75%;
+  .logo {
+    margin: 0 auto;
+    max-width: 90%;
+  }
 }
 h2.subtitle {
   color: white;
@@ -83,10 +93,13 @@ h2 span:after {
 
 // NOTE: Start content
 
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.25em;
+}
 footer {
   margin-top: 6em;
   p {
-    font-family: 'Josefin Sans', sans-serif;
     font-size: 1.25em;
     line-height: 1.6em;
     width: 95%;
@@ -98,23 +111,29 @@ footer {
 
 // NOTE: NAVBAR SMALL
 
-.small_nav_btn {
-  border: 1px solid #e8e8e8;
-  margin: 1em 1em 0 0;
-  font-family: 'Baloo Da', cursive;
-  font-weight: bold;
-  background: #f9f9f9;
-  color: orange;
-  @include border-radius(10%);
+.navbar_small {
+  color: aliceblue;
+  font-family: "WilliamLucasStd";
+  font-size: 2.5em;
+  border: 0.1px solid;
+  background: #565279;
+  width: 65%;
+  margin: 0 auto 0.5em;
+  @include border-radius(1%);
 }
 .menu_small_panel {
-  border-bottom: 1px solid #e8e8e8;
+//  border-bottom: 1px solid #e8e8e8;
+  background: #525071;
+  font-family: "WilliamLucasStd";
+  color: aliceblue;
+  font-size: 2em;
+  line-height: 1em;
 }
 .menu_small {
   border-top: 1px solid #e8e8e8;
-  font-family: 'Baloo Da', cursive;
-  font-weight: bold;
-  color: orange;
+//  font-family: 'Baloo Da', cursive;
+//  font-weight: bold;
+//  color: orange;
 }
 .active {
   color: #f55454;
@@ -130,35 +149,38 @@ h4.header_explain,
 h4.header_thematiek,
 h4.header_parallel {
   color: white;
-  margin: 1em auto;
+  margin: auto;
   letter-spacing: 1px;
   text-shadow: 0 0 1px;
 }
-
-h4.header_about {
-  background: #c86091;
-//  width: 90%;
-  margin: 1em auto;
+h4.header_explain,
+h4.header_about,
+h4.header_thematiek,
+h4.header_parallel {
+  font-family: "WilliamLucasStd";
+  font-size: 2.25em;
   padding: 0.25em 0;
-  font-size: 1.25em;
+  line-height: 1em;
 }
-//.round_about {
-//  @include border-radius(50%);
-//  width: 60%;
-//  border: 1px dotted lightgrey;
-//}
+h4.header_about {
+  color: #c86091;
+  width: 90%;
+//  margin: 1em auto;
+}
+
 h4.header_explain {
-  background: #7e7ff3;
-  width: 80%;
+  color: #7e7ff3;
+  margin-top: 0.25em;
+//  width: 80%;
 //  text-transform: uppercase;
 }
 h4.header_thematiek {
-  background: #a25f85;
-  width: 70%;
+  color: #a25f85;
+//  width: 70%;
 }
 h4.header_parallel {
-  background: #627962;
-  width: 80%;
+  color: #627962;
+//  width: 80%;
 }
 article.parallel {
   a {
@@ -169,11 +191,7 @@ article.parallel {
     color: #7e7ff3;
   }
 }
-.portrait {
-  width: 65%;
-  padding: 0.5em;
-  border: 1px solid lightgrey;
-}
+
 
 // MEDIA QUERIES
 
@@ -190,16 +208,24 @@ article.parallel {
   }
   h2.subtitle {
     font-size: 5em;
-    width: 70%;
+    width: 60%;
     padding-top: 0.75em;
     line-height: 1.5em;
     letter-spacing: 3px;
   }
   section.logo_content {
-  width: 30%;
+  width: 35%;
   float: left;
   }
 
 }
 
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  h2.subtitle {
+    font-size: 3em;
+    width: 60%;
+  }
+}
+
 @import "home";
+@import "about";

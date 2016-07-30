@@ -103,6 +103,11 @@ body.body_home {
     width: 50vw;
     height: 50vw;
   }
+  .text_performances,
+  .text_about,
+  .text_workshops {
+    font-size: 1.75em;
+  }
 }
 
 @media screen and (min-width: 601px) {
@@ -132,6 +137,7 @@ body.body_home {
   }
   .home_personal {
     font-family: "WilliamLucasStd";
+    line-height: 1em;
     font-weight: bold;
     font-size: 5em;
     color: #9e5454;
@@ -140,6 +146,7 @@ body.body_home {
     float: left;
     width: 33%;
     margin-top: 2em;
+    letter-spacing: 2px;
     a {
       text-decoration: none;
     }
@@ -159,8 +166,18 @@ body.body_home {
       text-shadow: 1px 1px 4px white;
     }
     a:hover {
-      color: #b184a8;
+      color: #3e3e66;
     }
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .text_performances,
+  .text_about,
+  .text_workshops {
+    font-size: 2.125em;
+  }
+  .home_contact_link {
+    font-size: 4em;
   }
 }
 @media screen and (min-width: 960px) {

@@ -1586,6 +1586,15 @@ input[type=checkbox].w3-check:disabled + .w3-validate, input[type=radio].w3-radi
 img {
   max-width: 100%; }
 
+.navbar {
+  font-family: "WilliamLucasStd";
+  font-size: 2em;
+  color: #021e33;
+  background-color: aliceblue;
+  max-width: 75%;
+  margin: 0 auto;
+  transform: rotate(-2deg); }
+
 .header {
   background-color: #1a194e;
   opacity: 0.9;
@@ -1599,11 +1608,12 @@ img {
   border-radius: 2%;
   margin: 2em auto 1em;
   border: 1px solid #8aafbb;
-  background-color: ivory;
-  transform: rotate(-5deg); }
-
-.logo {
-  margin: 0 auto; }
+  background-color: aliceblue;
+  transform: rotate(-5deg);
+  width: 75%; }
+  .logo_content .logo {
+    margin: 0 auto;
+    max-width: 90%; }
 
 h2.subtitle {
   color: white;
@@ -1645,10 +1655,13 @@ h2 span:before {
 h2 span:after {
   left: 100%; }
 
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.25em; }
+
 footer {
   margin-top: 6em; }
   footer p {
-    font-family: 'Josefin Sans', sans-serif;
     font-size: 1.25em;
     line-height: 1.6em;
     width: 95%;
@@ -1656,26 +1669,28 @@ footer {
     text-shadow: 0 0 0.1px;
     letter-spacing: 0.5px; }
 
-.small_nav_btn {
-  border: 1px solid #e8e8e8;
-  margin: 1em 1em 0 0;
-  font-family: 'Baloo Da', cursive;
-  font-weight: bold;
-  background: #f9f9f9;
-  color: orange;
-  -webkit-border-radius: 10%;
-  -moz-border-radius: 10%;
-  -ms-border-radius: 10%;
-  border-radius: 10%; }
+.navbar_small {
+  color: aliceblue;
+  font-family: "WilliamLucasStd";
+  font-size: 2.5em;
+  border: 0.1px solid;
+  background: #565279;
+  width: 65%;
+  margin: 0 auto 0.5em;
+  -webkit-border-radius: 1%;
+  -moz-border-radius: 1%;
+  -ms-border-radius: 1%;
+  border-radius: 1%; }
 
 .menu_small_panel {
-  border-bottom: 1px solid #e8e8e8; }
+  background: #525071;
+  font-family: "WilliamLucasStd";
+  color: aliceblue;
+  font-size: 2em;
+  line-height: 1em; }
 
 .menu_small {
-  border-top: 1px solid #e8e8e8;
-  font-family: 'Baloo Da', cursive;
-  font-weight: bold;
-  color: orange; }
+  border-top: 1px solid #e8e8e8; }
 
 .active {
   color: #f55454; }
@@ -1689,38 +1704,38 @@ h4.header_explain,
 h4.header_thematiek,
 h4.header_parallel {
   color: white;
-  margin: 1em auto;
+  margin: auto;
   letter-spacing: 1px;
   text-shadow: 0 0 1px; }
 
-h4.header_about {
-  background: #c86091;
-  margin: 1em auto;
+h4.header_explain,
+h4.header_about,
+h4.header_thematiek,
+h4.header_parallel {
+  font-family: "WilliamLucasStd";
+  font-size: 2.25em;
   padding: 0.25em 0;
-  font-size: 1.25em; }
+  line-height: 1em; }
+
+h4.header_about {
+  color: #c86091;
+  width: 90%; }
 
 h4.header_explain {
-  background: #7e7ff3;
-  width: 80%; }
+  color: #7e7ff3;
+  margin-top: 0.25em; }
 
 h4.header_thematiek {
-  background: #a25f85;
-  width: 70%; }
+  color: #a25f85; }
 
 h4.header_parallel {
-  background: #627962;
-  width: 80%; }
+  color: #627962; }
 
 article.parallel a {
   color: #627962;
   text-decoration: none; }
 article.parallel a:hover {
   color: #7e7ff3; }
-
-.portrait {
-  width: 65%;
-  padding: 0.5em;
-  border: 1px solid lightgrey; }
 
 @media screen and (max-width: 375px) {
   h2.subtitle {
@@ -1732,14 +1747,18 @@ article.parallel a:hover {
 
   h2.subtitle {
     font-size: 5em;
-    width: 70%;
+    width: 60%;
     padding-top: 0.75em;
     line-height: 1.5em;
     letter-spacing: 3px; }
 
   section.logo_content {
-    width: 30%;
+    width: 35%;
     float: left; } }
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  h2.subtitle {
+    font-size: 3em;
+    width: 60%; } }
 html.home_opacity {
   opacity: 0.95; }
 
@@ -1863,7 +1882,12 @@ section.home_content_performances {
   .home_button_performances,
   .home_button_workshops {
     width: 50vw;
-    height: 50vw; } }
+    height: 50vw; }
+
+  .text_performances,
+  .text_about,
+  .text_workshops {
+    font-size: 1.75em; } }
 @media screen and (min-width: 601px) {
   .home_button_about,
   .home_button_performances,
@@ -1891,6 +1915,7 @@ section.home_content_performances {
 
   .home_personal {
     font-family: "WilliamLucasStd";
+    line-height: 1em;
     font-weight: bold;
     font-size: 5em;
     color: #9e5454;
@@ -1898,7 +1923,8 @@ section.home_content_performances {
     opacity: 0.8;
     float: left;
     width: 33%;
-    margin-top: 2em; }
+    margin-top: 2em;
+    letter-spacing: 2px; }
     .home_personal a {
       text-decoration: none; }
     .home_personal a:hover {
@@ -1915,12 +1941,109 @@ section.home_content_performances {
       letter-spacing: 4px;
       text-shadow: 1px 1px 4px white; }
     .home_contact_link a:hover {
-      color: #b184a8; } }
+      color: #3e3e66; } }
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .text_performances,
+  .text_about,
+  .text_workshops {
+    font-size: 2.125em; }
+
+  .home_contact_link {
+    font-size: 4em; } }
 @media screen and (min-width: 960px) {
   .home_button_about,
   .home_button_performances,
   .home_button_workshops {
     width: 220px;
     height: 220px; } }
+body.body_about {
+  background-image: url(wallpaper_small.jpg);
+  background-size: contain;
+  opacity: 0.8; }
+
+.about_about {
+  background: aliceblue;
+  transform: rotate(1deg); }
+
+.about_explain {
+  transform: rotate(-1deg);
+  background: #fff7e0;
+  width: 95%; }
+
+.about_portrait {
+  width: 75vw;
+  height: 75vw;
+  margin: 0 auto;
+  transform: rotate(1deg); }
+  .about_portrait .portrait {
+    width: 65%;
+    padding: 0.5em;
+    border: 1px solid #777;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%; }
+
+.about_thematiek {
+  background: #f9ffff;
+  width: 98%;
+  transform: rotate(1deg);
+  float: right; }
+
+.about_parallel {
+  clear: both;
+  background: white;
+  width: 93%;
+  transform: rotate(-1deg); }
+
+@media screen and (min-width: 601px) {
+  section.about_explain {
+    width: 40%; }
+
+  section.about_about {
+    float: left;
+    margin: 1em 0 0 3em;
+    width: 45%; }
+
+  section.about_explain {
+    float: right;
+    margin-right: 1em; }
+
+  .about_portrait {
+    clear: both;
+    width: 45%;
+    height: 45vw;
+    margin: 0 auto;
+    float: left; }
+
+  section.about_thematiek {
+    width: 45%;
+    margin-top: 1em; }
+
+  section.about_parallel {
+    clear: left;
+    width: 75%;
+    margin: 0 auto; } }
+@media screen and (min-width: 801px) {
+  section.about_explain {
+    width: 320px; }
+
+  section.about_about {
+    margin: 1em 0 0 3em;
+    width: 360px; }
+
+  section.about_explain {
+    margin-right: 1em; }
+
+  .about_portrait {
+    width: 360px;
+    height: 360px; }
+
+  section.about_thematiek {
+    width: 360px;
+    margin-top: 1em; }
+
+  section.about_parallel {
+    width: 560px; } }
 
 /*# sourceMappingURL=style.css.map */
