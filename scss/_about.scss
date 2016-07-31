@@ -1,16 +1,14 @@
 body.body_about {
-  background-image: url(wallpaper_small.jpg);
+  background-image: url(wallpaper_xsmall.jpg);
   background-size: contain;
-//  background-repeat: no-repeat;
   opacity: 0.8;
 }
 .about_about {
   background: aliceblue;
-  transform: rotate(1deg);
-//  font-size: 125%;
+  @include transform(rotate(1deg));
 }
 .about_explain {
-  transform: rotate(-1deg);
+  @include transform(rotate(-1deg));
   background: #fff7e0;
   width: 95%;
 }
@@ -18,7 +16,8 @@ body.body_about {
   width: 75vw;
   height: 75vw;
   margin: 0 auto;
-  transform: rotate(1deg);
+  @include transform(rotate(1deg));
+  opacity: 0.85;
   .portrait {
     width: 65%;
     padding: 0.5em;
@@ -29,14 +28,17 @@ body.body_about {
 .about_thematiek {
   background: #f9ffff;
   width: 98%;
-  transform: rotate(1deg);
+  @include transform(rotate(1deg));
   float: right;
 }
 .about_parallel {
   clear: both;
   background: white;
   width: 93%;
-  transform: rotate(-1deg);
+  @include transform(rotate(-1deg));
+}
+.navbar_item.navbar_item_about {
+  background: #f2eae6;
 }
 
 @media screen and (min-width: 601px) {

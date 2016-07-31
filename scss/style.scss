@@ -7,27 +7,51 @@
 }
 @font-face {
   font-family: 'SchmutzPro-Clogged';
-  src: url('../Fonts/2FDF27_3C_0') format('woff2'), url('../Fonts/2FDF27_3C_0.woff') format('woff'), url('../Fonts/2FDF27_3C_0.ttf') format('truetype'), url('../Fonts/2FDF27_3C_0.eot') format('eot');
+  src: url('../Fonts/2FDF27_3C_0.woff2') format('woff2'), url('../Fonts/2FDF27_3C_0.woff') format('woff'), url('../Fonts/2FDF27_3C_0.ttf') format('truetype'), url('../Fonts/2FDF27_3C_0.eot') format('eot');
 }
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(https://fonts.googleapis.com/css?family=Baloo+Da);
+@import url(http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css);
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
   -ms-border-radius: $radius;
   border-radius: $radius;
 }
+@mixin transform($transforms) {
+	   -moz-transform: $transforms;
+	     -o-transform: $transforms;
+	    -ms-transform: $transforms;
+	-webkit-transform: $transforms;
+          transform: $transforms;
+}
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
 .mySlides {display: none}
 img {max-width: 100%;}
 
 // HEADER
 .navbar {
   font-family: "WilliamLucasStd";
-  font-size: 2em;
-  color: #021e33;
-  background-color: aliceblue;
-  max-width: 75%;
+  font-size: 1.875em;
   margin: 0 auto;
-  transform: rotate(-2deg);
+  transform: rotate(-1deg);
+.navbar_item {
+  color: #535279;
+  background: #e5e5e5;
+  border: 1px solid white;
+  margin: 0 auto;
+  font-weight: bold;
+  text-shadow: 1px 2px 4px white;
+  letter-spacing: 1px;
+  width: 49vw;
+  a {
+    text-decoration: none;
+  }
+}
 }
 .header {
   background-color: #1a194e;
@@ -40,7 +64,7 @@ img {max-width: 100%;}
   margin: 2em auto 1em;
   border: 1px solid #8aafbb;
   background-color: aliceblue;
-  transform: rotate(-5deg);
+  @include transform(rotate(-5deg));
   width: 75%;
   .logo {
     margin: 0 auto;
@@ -57,7 +81,7 @@ h2.subtitle {
 h2,
 h4,
 h5 {
-  font-family: 'Baloo Da', cursive;
+  font-family: "WilliamLucasStd";
 }
 
 // H2 WITH LINES
@@ -128,12 +152,6 @@ footer {
   color: aliceblue;
   font-size: 2em;
   line-height: 1em;
-}
-.menu_small {
-  border-top: 1px solid #e8e8e8;
-//  font-family: 'Baloo Da', cursive;
-//  font-weight: bold;
-//  color: orange;
 }
 .active {
   color: #f55454;
@@ -206,6 +224,13 @@ article.parallel {
     transform: rotate(-2deg);
     margin: 2em auto 1em;
   }
+  .navbar {
+    .navbar_item {
+      width: 20%;
+      margin: 0 0 0 1em;
+    }
+  }
+
   h2.subtitle {
     font-size: 5em;
     width: 60%;
@@ -229,3 +254,5 @@ article.parallel {
 
 @import "home";
 @import "about";
+@import "toneel";
+@import "workshops";

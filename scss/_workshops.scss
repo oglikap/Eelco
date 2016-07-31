@@ -1,0 +1,45 @@
+body.workshops_about {
+  background-image: url(concrete.jpg);
+  opacity: 0.8;
+}
+.navbar {
+  opacity: 0.8;
+  .navbar_item {
+    background: #d2d4c6;
+    color: #a96c13;
+  }
+}
+.workshops_article {
+  background: #fefff6;
+  @include transform(rotate(1deg));
+}
+.workshop_workshopdata {
+  background: #fefff6;
+  @include transform(rotate(-1deg));
+}
+h4.header_workshops,
+h4.header_workshopdata {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #9f9fd0;
+}
+.workshop_kabouter {
+  width: 30%;
+  float: left;
+  opacity: 0.75;
+}
+
+@media screen and (min-width:601px) {
+
+  .workshops_article {
+    float: left;
+    width: 60%;
+    opacity: 0.8;
+    margin-left: 2em;
+  }
+  .workshop_workshopdata {
+    width: 30%;
+    opacity: 0.8;
+    float: right;
+  }
+}

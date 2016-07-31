@@ -22,7 +22,7 @@ body.body_home {
     padding: 4px;
     color: white;
     background: #567782;
-    transform: rotate(-10deg);
+    @include transform(rotate(-10deg));
     float: right;
     width: 80%;
     box-shadow: 1px 1px 1px #777;
@@ -30,13 +30,13 @@ body.body_home {
   p.subscript_float_left {
     background-color: #923b3b;
     float: left;
-    transform: rotate(5deg);
+    @include transform(rotate(5deg));
     width: 85%;
     }
   p.subscript_float_right {
     background-color: #a7739e;
     width: 75%;
-    transform: rotate(-15deg);
+    @include transform(rotate(-15deg));
     }
   }
   section.home_content_about,
@@ -48,11 +48,11 @@ body.body_home {
     @include border-radius(1%);
     }
   section.home_content_about {
-    transform: rotate(4deg);
+    @include transform(rotate(4deg));
     z-index: -1;
     }
   section.home_content_performances {
-    transform: rotate(-2deg);
+    @include transform(rotate(-2deg));
     z-index: 0;
     }
   .home_button_about,
@@ -139,12 +139,12 @@ body.body_home {
     font-family: "WilliamLucasStd";
     line-height: 1em;
     font-weight: bold;
-    font-size: 5em;
+    font-size: 4em;
     color: #9e5454;
     text-shadow: 3px 3px 6px white;
     opacity: 0.8;
-    float: left;
-    width: 33%;
+    float: right;
+    width: 25%;
     margin-top: 2em;
     letter-spacing: 2px;
     a {
