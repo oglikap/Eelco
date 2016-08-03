@@ -1,7 +1,7 @@
 body.body_about {
   background-image: url(wallpaper_xsmall.jpg);
   background-size: contain;
-  opacity: 0.8;
+//  opacity: 0.8;
 }
 .about_about {
   background: aliceblue;
@@ -17,7 +17,7 @@ body.body_about {
   height: 75vw;
   margin: 0 auto;
   @include transform(rotate(1deg));
-  opacity: 0.85;
+//  opacity: 0.85;
   .portrait {
     width: 65%;
     padding: 0.5em;

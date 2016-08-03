@@ -1596,17 +1596,21 @@ input[type=checkbox].w3-check:disabled + .w3-validate, input[type=radio].w3-radi
 @font-face {
   font-family: 'SchmutzPro-Clogged';
   src: url("../Fonts/2FDF27_3C_0.woff2") format("woff2"), url("../Fonts/2FDF27_3C_0.woff") format("woff"), url("../Fonts/2FDF27_3C_0.ttf") format("truetype"), url("../Fonts/2FDF27_3C_0.eot") format("eot"); }
-.mySlides {
-  display: none; }
+my-email::after {
+  content: attr(data-domain); }
+
+my-email::before {
+  content: attr(data-user) "@"; }
 
 img {
   max-width: 100%; }
 
 .navbar {
-  font-family: "WilliamLucasStd";
+  font-family: "WilliamLucasStd", "Comic Sans MS", cursive, sans-serif;
   font-size: 1.875em;
   margin: 0 auto;
-  transform: rotate(-1deg); }
+  transform: rotate(-1deg);
+  opacity: 0.95; }
   .navbar .navbar_item {
     color: #535279;
     background: #e5e5e5;
@@ -1621,7 +1625,7 @@ img {
 
 .header {
   background-color: #1a194e;
-  opacity: 0.9;
+  opacity: 0.95;
   margin: 0 auto 1.5em;
   padding-bottom: 0.5em; }
 
@@ -1631,29 +1635,26 @@ img {
   -ms-border-radius: 2%;
   border-radius: 2%;
   margin: 2em auto 1em;
-  border: 1px solid #8aafbb;
-  background-color: aliceblue;
   -moz-transform: rotate(-5deg);
   -o-transform: rotate(-5deg);
   -ms-transform: rotate(-5deg);
   -webkit-transform: rotate(-5deg);
-  transform: rotate(-5deg);
-  width: 75%; }
+  transform: rotate(-5deg); }
   .logo_content .logo {
-    margin: 0 auto;
-    max-width: 90%; }
+    margin: 0 auto; }
 
 h2.subtitle {
   color: white;
   font-size: 5em;
   margin: 0 auto;
-  font-family: "WilliamLucasStd";
-  font-weight: bold; }
+  font-family: "WilliamLucasStd", "Comic Sans MS", cursive, sans-serif;
+  font-weight: bold;
+  opacity: 0.95; }
 
 h2,
 h4,
 h5 {
-  font-family: "WilliamLucasStd"; }
+  font-family: "WilliamLucasStd", "Comic Sans MS", cursive, sans-serif; }
 
 h2 {
   position: relative;
@@ -1683,8 +1684,10 @@ h2 span:before {
 h2 span:after {
   left: 100%; }
 
+body {
+  font-family: 'Josefin Sans', sans-serif; }
+
 p {
-  font-family: 'Josefin Sans', sans-serif;
   font-size: 1.25em; }
 
 footer {
@@ -1699,7 +1702,7 @@ footer {
 
 .navbar_small {
   color: aliceblue;
-  font-family: "WilliamLucasStd";
+  font-family: "WilliamLucasStd", "Comic Sans MS", cursive, sans-serif;
   font-size: 2.5em;
   border: 0.1px solid;
   background: #565279;
@@ -1712,7 +1715,7 @@ footer {
 
 .menu_small_panel {
   background: #525071;
-  font-family: "WilliamLucasStd";
+  font-family: "WilliamLucasStd", "Comic Sans MS", cursive, sans-serif;
   color: aliceblue;
   font-size: 2em;
   line-height: 1em; }
@@ -1737,7 +1740,7 @@ h4.header_explain,
 h4.header_about,
 h4.header_thematiek,
 h4.header_parallel {
-  font-family: "WilliamLucasStd";
+  font-family: "WilliamLucasStd", "Comic Sans MS", cursive, sans-serif;
   font-size: 2.25em;
   padding: 0.25em 0;
   line-height: 1em; }
@@ -1761,6 +1764,10 @@ article.parallel a {
   text-decoration: none; }
 article.parallel a:hover {
   color: #7e7ff3; }
+
+.contact_sendmail {
+  font-size: 2em;
+  font-weight: bold; }
 
 @media screen and (max-width: 375px) {
   h2.subtitle {
@@ -1788,15 +1795,11 @@ article.parallel a:hover {
   h2.subtitle {
     font-size: 3em;
     width: 60%; } }
-html.home_opacity {
-  opacity: 0.95; }
-
 body.body_home {
   font-family: "Lato", sans-serif;
   background: #f9f9f9;
   background-image: url(background_wall.jpg);
-  background-size: contain;
-  opacity: 0.9; }
+  background-size: contain; }
 
 .home_content_about,
 .home_content_performances,
@@ -1813,7 +1816,7 @@ body.body_home {
   .home_content_workshops p.subscript,
   .home_content_workshops p.subscript_float_left,
   .home_content_workshops p.subscript_float_right {
-    font-family: "WilliamLucasStd";
+    font-family: "WilliamLucasStd", "Comic Sans MS", cursive, sans-serif;
     font-size: 1.125em;
     padding: 4px;
     color: white;
@@ -1864,16 +1867,14 @@ section.home_content_about {
   -o-transform: rotate(4deg);
   -ms-transform: rotate(4deg);
   -webkit-transform: rotate(4deg);
-  transform: rotate(4deg);
-  z-index: -1; }
+  transform: rotate(4deg); }
 
 section.home_content_performances {
   -moz-transform: rotate(-2deg);
   -o-transform: rotate(-2deg);
   -ms-transform: rotate(-2deg);
   -webkit-transform: rotate(-2deg);
-  transform: rotate(-2deg);
-  z-index: 0; }
+  transform: rotate(-2deg); }
 
 .home_button_about,
 .home_button_performances,
@@ -1950,47 +1951,43 @@ section.home_content_performances {
     width: 40%; }
 
   section.home_content_about {
-    float: right;
-    margin-right: 5em;
+    margin: 0 auto;
     width: 40%; }
 
   section.home_content_performances {
     float: left;
-    margin-left: 8em; }
+    margin-left: 4em; } }
+.home_personal {
+  font-family: "WilliamLucasStd", "Comic Sans MS", cursive, sans-serif;
+  font-weight: bold;
+  font-size: 4em;
+  text-shadow: 3px 3px 6px white;
+  opacity: 0.9;
+  float: right;
+  width: 25%;
+  margin: 1em 1em 0 0;
+  letter-spacing: 2px; }
+  .home_personal .w3-modal-content {
+    font-size: 0.25em; }
+    .home_personal .w3-modal-content .welkom {
+      margin-top: 2em; }
 
-  .home_contact_link {
-    float: right;
-    font-size: 5em; }
+.personal {
+  background-color: #923b3b;
+  border: 1px solid white;
+  height: 150px;
+  line-height: 0.875em;
+  -moz-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  transform: rotate(-2deg); }
 
-  .home_personal {
-    font-family: "WilliamLucasStd";
-    line-height: 1em;
-    font-weight: bold;
-    font-size: 4em;
-    color: #9e5454;
-    text-shadow: 3px 3px 6px white;
-    opacity: 0.8;
-    float: right;
-    width: 25%;
-    margin-top: 2em;
-    letter-spacing: 2px; }
-    .home_personal a {
-      text-decoration: none; }
-    .home_personal a:hover {
-      color: #3e3e66; }
+.home_contact_link {
+  font-family: 'SchmutzPro-Clogged';
+  width: 30%;
+  font-size: 5em; }
 
-  .home_contact_link {
-    font-family: 'SchmutzPro-Clogged';
-    width: 30%;
-    font-size: 5em; }
-    .home_contact_link a {
-      text-decoration: none;
-      opacity: 1;
-      color: #616161;
-      letter-spacing: 4px;
-      text-shadow: 1px 1px 4px white; }
-    .home_contact_link a:hover {
-      color: #3e3e66; } }
 @media screen and (min-width: 601px) and (max-width: 768px) {
   .text_performances,
   .text_about,
@@ -2007,8 +2004,7 @@ section.home_content_performances {
     height: 220px; } }
 body.body_about {
   background-image: url(wallpaper_xsmall.jpg);
-  background-size: contain;
-  opacity: 0.8; }
+  background-size: contain; }
 
 .about_about {
   background: aliceblue;
@@ -2035,8 +2031,7 @@ body.body_about {
   -o-transform: rotate(1deg);
   -ms-transform: rotate(1deg);
   -webkit-transform: rotate(1deg);
-  transform: rotate(1deg);
-  opacity: 0.85; }
+  transform: rotate(1deg); }
   .about_portrait .portrait {
     width: 65%;
     padding: 0.5em;
@@ -2119,8 +2114,7 @@ body.body_about {
   section.about_parallel {
     width: 560px; } }
 body.toneel_about {
-  background-image: url(planken_small.jpg);
-  opacity: 0.8; }
+  background-image: url(planken_small.jpg); }
 
 section.about_sohappy {
   background: white; }
@@ -2160,6 +2154,7 @@ section.toneel_credits2 {
   transform: rotate(2deg);
   background: #e9e9e9;
   font-size: 80%;
+  font-weight: bold;
   line-height: 1.35em;
   border: 1px solid white; }
 
@@ -2200,7 +2195,9 @@ h4.header_neemmein {
   section.toneel_credits2 {
     clear: left;
     float: right;
-    width: 60%; }
+    width: 60%;
+    font-size: 80%;
+    font-weight: bold; }
 
   p.toneel_rooftop2 {
     max-width: 60%;
@@ -2215,14 +2212,11 @@ h4.header_neemmein {
   p.toneel_rooftop2 {
     margin: 0 auto; } }
 body.workshops_about {
-  background-image: url(concrete.jpg);
-  opacity: 0.8; }
+  background-image: url(concrete.jpg); }
 
-.navbar {
-  opacity: 0.8; }
-  .navbar .navbar_item {
-    background: #d2d4c6;
-    color: #a96c13; }
+.navbar .navbar_item {
+  background: #d2d4c6;
+  color: #a96c13; }
 
 .workshops_article {
   background: #fefff6;
@@ -2246,10 +2240,28 @@ h4.header_workshopdata {
   font-weight: bold;
   color: #9f9fd0; }
 
-.workshop_kabouter {
-  width: 30%;
-  float: left;
-  opacity: 0.75; }
+.questions {
+  margin-top: 1em;
+  width: 55vw;
+  height: 55vw;
+  background: #e91e63;
+  color: white;
+  font-family: "WilliamLucasStd", "Comic Sans MS", cursive, sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px darkblue;
+  -moz-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  opacity: 0.8;
+  border: 1px solid white;
+  letter-spacing: 4px; }
 
 @media screen and (min-width: 601px) {
   .workshops_article {
@@ -2261,6 +2273,66 @@ h4.header_workshopdata {
   .workshop_workshopdata {
     width: 30%;
     opacity: 0.8;
-    float: right; } }
+    float: right; }
+
+  .questions {
+    width: 17.5vw;
+    height: 17.5vw; } }
+.contact_mail,
+.contact_facebook,
+.contact_maps {
+  float: left;
+  border: 1px solid white;
+  background: white;
+  opacity: 0.8;
+  -moz-transform: rotate(-1deg);
+  -o-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
+  -webkit-transform: rotate(-1deg);
+  transform: rotate(-1deg);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center; }
+
+.contact_facebook {
+  float: right;
+  -moz-transform: rotate(1deg);
+  -o-transform: rotate(1deg);
+  -ms-transform: rotate(1deg);
+  -webkit-transform: rotate(1deg);
+  transform: rotate(1deg); }
+
+@media screen and (min-width: 601px) {
+  .contact_mail, .contact_facebook {
+    width: 25vw;
+    height: 20vw; }
+
+  .contact_mail {
+    margin-left: 2em; }
+
+  .contact_facebook {
+    margin-right: 2em; }
+
+  .contact_maps {
+    width: 35vw;
+    height: 20vw;
+    clear: both;
+    margin: 1em auto; } }
 
 /*# sourceMappingURL=style.css.map */

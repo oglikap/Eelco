@@ -1,0 +1,39 @@
+.contact_mail,
+.contact_facebook,
+.contact_maps {
+  float: left;
+  border: 1px solid white;
+  background: white;
+  opacity: 0.8;
+  @include transform(rotate(-1deg));
+  @include flexbox;
+  @include align-items(center);
+  @include flex-wrap(wrap);
+  @include justify-content(center);
+}
+.contact_facebook {
+  float: right;
+  @include transform(rotate(1deg));
+}
+.contact_maps {
+}
+
+@media screen and (min-width: 601px) {
+
+  .contact_mail, .contact_facebook{
+    width: 25vw;
+    height: 20vw;
+  }
+  .contact_mail {
+    margin-left: 2em;
+  }
+  .contact_facebook {
+    margin-right: 2em;
+  }
+  .contact_maps {
+    width: 35vw;
+    height: 20vw;
+    clear: both;
+    margin: 1em auto;
+  }
+}

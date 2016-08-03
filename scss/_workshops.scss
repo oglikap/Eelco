@@ -1,9 +1,9 @@
 body.workshops_about {
   background-image: url(concrete.jpg);
-  opacity: 0.8;
+//  opacity: 0.8;
 }
 .navbar {
-  opacity: 0.8;
+//  opacity: 0.8;
   .navbar_item {
     background: #d2d4c6;
     color: #a96c13;
@@ -23,10 +23,21 @@ h4.header_workshopdata {
   font-weight: bold;
   color: #9f9fd0;
 }
-.workshop_kabouter {
-  width: 30%;
-  float: left;
-  opacity: 0.75;
+.questions {
+  margin-top: 1em;
+  width: 55vw;
+  height: 55vw;
+  background: #e91e63;
+  color: white;
+  font-family: "WilliamLucasStd", "Comic Sans MS", cursive, sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px darkblue;
+  @include transform(rotate(-15deg));
+  @include border-radius(50%);
+  opacity: 0.8;
+  border: 1px solid white;
+  letter-spacing: 4px;
 }
 
 @media screen and (min-width:601px) {
@@ -41,5 +52,9 @@ h4.header_workshopdata {
     width: 30%;
     opacity: 0.8;
     float: right;
+  }
+  .questions {
+    width: 17.5vw;
+    height: 17.5vw;
   }
 }

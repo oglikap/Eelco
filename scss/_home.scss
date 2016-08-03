@@ -1,12 +1,12 @@
 html.home_opacity {
-  opacity: 0.95;
+//  opacity: 0.95;
 }
 body.body_home {
   font-family: "Lato", sans-serif;
   background: #f9f9f9;
   background-image: url(background_wall.jpg);
   background-size: contain;
-  opacity: 0.9;
+//  opacity: 0.9;
   }
 .home_content_about,
 .home_content_performances,
@@ -17,7 +17,7 @@ body.body_home {
   p.subscript,
   p.subscript_float_left,
   p.subscript_float_right {
-    font-family: "WilliamLucasStd";
+    font-family: "WilliamLucasStd", "Comic Sans MS", cursive, sans-serif;
     font-size: 1.125em;
     padding: 4px;
     color: white;
@@ -49,11 +49,11 @@ body.body_home {
     }
   section.home_content_about {
     @include transform(rotate(4deg));
-    z-index: -1;
+//    z-index: -1;
     }
   section.home_content_performances {
     @include transform(rotate(-2deg));
-    z-index: 0;
+//    z-index: 0;
     }
   .home_button_about,
   .home_button_performances,
@@ -123,52 +123,64 @@ body.body_home {
     width: 40%;
   }
   section.home_content_about {
-    float: right;
-    margin-right: 5em;
+  //  float: left;
+  //  margin-left: 5em;
+    margin: 0 auto;
     width: 40%;
   }
   section.home_content_performances {
     float: left;
-    margin-left: 8em;
+    margin-left: 4em;
   }
-  .home_contact_link {
-    float: right;
-    font-size: 5em;
+  //.home_contact_link {
+  //  float: right;
+  //  font-size: 5em;
   }
   .home_personal {
-    font-family: "WilliamLucasStd";
-    line-height: 1em;
+    font-family: "WilliamLucasStd", "Comic Sans MS", cursive, sans-serif;
     font-weight: bold;
     font-size: 4em;
-    color: #9e5454;
     text-shadow: 3px 3px 6px white;
-    opacity: 0.8;
+    opacity: 0.9;
     float: right;
     width: 25%;
-    margin-top: 2em;
+    margin: 1em 1em 0 0;
     letter-spacing: 2px;
-    a {
-      text-decoration: none;
+    .w3-modal-content {
+      font-size: 0.25em;
+      .welkom {
+        margin-top: 2em;
+      }
     }
-    a:hover {
-      color: #3e3e66;
-    }
+//    a {
+//      text-decoration: none;
+//    }
+//    a:hover {
+//      color: #3e3e66;
+//    }
+  }
+  .personal {
+    background-color: #923b3b;
+    border: 1px solid white;
+    height: 150px;
+    line-height: 0.875em;
+    @include transform(rotate(-2deg));
   }
   .home_contact_link {
     font-family: 'SchmutzPro-Clogged';
     width: 30%;
     font-size: 5em;
-    a {
-      text-decoration: none;
-      opacity: 1;
-      color: #616161;
-      letter-spacing: 4px;
-      text-shadow: 1px 1px 4px white;
-    }
-    a:hover {
-      color: #3e3e66;
-    }
-  }
+  //a {
+  //    text-decoration: none;
+  //    opacity: 1;
+  //    color: #616161;
+  //    letter-spacing: 4px;
+  //    text-shadow: 1px 1px 4px white;
+  //  }
+  //  a:hover {
+  //    color: #3e3e66;
+  //  }
+  //}
 }
 @media screen and (min-width: 601px) and (max-width: 768px) {
   .text_performances,
