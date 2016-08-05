@@ -1624,16 +1624,12 @@ img {
       text-decoration: none; }
 
 .header {
-  background-color: #1a194e;
+  background-color: grey;
   opacity: 0.95;
   margin: 0 auto 1.5em;
   padding-bottom: 0.5em; }
 
 .logo_content {
-  -webkit-border-radius: 2%;
-  -moz-border-radius: 2%;
-  -ms-border-radius: 2%;
-  border-radius: 2%;
   margin: 2em auto 1em;
   -moz-transform: rotate(-5deg);
   -o-transform: rotate(-5deg);
@@ -1647,9 +1643,7 @@ h2.subtitle {
   color: white;
   font-size: 5em;
   margin: 0 auto;
-  font-family: "WilliamLucasStd", "Comic Sans MS", cursive, sans-serif;
-  font-weight: bold;
-  opacity: 0.95; }
+  font-family: 'SchmutzPro-Clogged'; }
 
 h2,
 h4,
@@ -1774,8 +1768,7 @@ article.parallel a:hover {
     font-size: 4em; } }
 @media screen and (min-width: 601px) {
   .header {
-    transform: rotate(-2deg);
-    margin: 2em auto 1em; }
+    margin: 1em auto 1em; }
 
   .navbar .navbar_item {
     width: 20%;
@@ -2003,8 +1996,8 @@ section.home_content_performances {
     width: 220px;
     height: 220px; } }
 body.body_about {
-  background-image: url(wallpaper_xsmall.jpg);
-  background-size: contain; }
+  background-image: url(background.jpg);
+  background-size: cover; }
 
 .about_about {
   background: aliceblue;
